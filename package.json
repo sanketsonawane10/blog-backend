@@ -1,0 +1,44 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "migrate": "node migrate --up",
+    "undo-migrate": "node migrate --down to:0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1560.0",
+    "axios": "^1.2.0",
+    "body-parser": "^1.20.0",
+    "body-parser-xml": "^2.0.3",
+    "cors": "^2.8.5",
+    "dataframe-js": "^1.4.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "joi": "^17.12.1",
+    "jxon": "^2.0.0-beta.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "npm": "^9.6.4",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.23.2",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.6.0",
+    "swagger-yaml": "^1.0.0",
+    "umzug": "^3.2.1",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "workerpool": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "local": {
+        "username": "postgres",
+        "password": "2304",
+        "database": "sanket_blog",
+        "host": "localhost",
+        "dialect": "postgres",
+        "logging": false,
+        "migrationStorageTableName": "sequelizeMetaBlog"
+    }
+}
