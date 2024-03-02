@@ -23,6 +23,7 @@ const StartServer = async () => {
     app.use(errorHandler);
     app.use(responseHandler);
     app.use(logHandler);
+    app.get("/", (req, res) => res.send("Express on Vercel"));
     app.listen(nodePort, () => {
         console.log(`listening to port ${nodePort}`);
     }).on('error', (err) => {
