@@ -9,13 +9,13 @@
         "migrationStorageTableName": "sequelizeMetaBlog"
     },
     "local": {
-        "username": "u6fivhpvk4qfxbzm6wy9",
-        "password": "SXDtjRvoWjfNTRMWibcUmQHhKJNAFp",
-        "database": "bau712v0vuf0f3h9bofu",
-        "host": "bau712v0vuf0f3h9bofu-postgresql.services.clever-cloud.com",
+        "username": "sank_blog_user",
+        "password": "B5fKHf7qyngKQYBHkxTDunYHo1wqxEqT",
+        "database": "sank_blog",
+        "host": "dpg-cnhh8qta73kc73b90ss0-a",
         "dialect": "postgres",
         "logging": false,
-        "port":50013,
+        "port":5432,
         "migrationStorageTableName": "sequelizeMetaBlog"
     }
 }
