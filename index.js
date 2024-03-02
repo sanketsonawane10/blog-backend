@@ -9,6 +9,12 @@ nodePort = nodePort || 6000;
 
 const StartServer = async () => {
     app.use(bodyParser.json({ limit: '200mb' }));
+    const corsConfig = {
+        origin:"*",
+        credential:true,
+        methods:["GET","POST","PUT","PATCH","DELETE"]
+    }
+    app.options("",cors(corsConfig))
     app.use(cors());
     app.use(bodyParser.urlencoded({ limit: '200mb', extended: true }));
     await initSequelize();
