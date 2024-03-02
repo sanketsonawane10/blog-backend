@@ -15,7 +15,7 @@ const StartServer = async () => {
         methods:["GET","POST","PUT","PATCH","DELETE"]
     }
     app.options("",cors(corsConfig))
-    app.use(cors());
+    app.use(cors(corsConfig));
     app.use(bodyParser.urlencoded({ limit: '200mb', extended: true }));
     await initSequelize();
     app.use(contentHandler);
