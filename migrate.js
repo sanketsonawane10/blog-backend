@@ -16,6 +16,8 @@ const postgresConfig = require('./src/config/db/postgres/postgresql.config.json'
 
   let dbConfig;
 
+
+
   // load db configurations according to environment
   if (['local'].includes(env)) {
     dbConfig = postgresConfig[env];
@@ -25,7 +27,7 @@ const postgresConfig = require('./src/config/db/postgres/postgresql.config.json'
     dbConfig.dialect = dbConfig.engine;
     dbConfig.database = dbConfig.dbInstanceIdentifier;
   }
-
+  console.log(dbConfig);
   // initialize db connection
   const sequelize = new Sequelize(
     dbConfig.database,
@@ -34,9 +36,13 @@ const postgresConfig = require('./src/config/db/postgres/postgresql.config.json'
     {
       host: dbConfig.host,
       dialect: dbConfig.dialect,
+      port: dbConfig.port
     },
     dbConfig
   );
+
+  console.log(sequelize)
+
   await sequelize.authenticate();
 
   // initialize umzug instance for migrations

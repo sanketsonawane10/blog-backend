@@ -1,11 +1,21 @@
 {
-    "local": {
+    "local1": {
         "username": "postgres",
         "password": "2304",
         "database": "sanket_blog",
         "host": "localhost",
         "dialect": "postgres",
         "logging": false,
+        "migrationStorageTableName": "sequelizeMetaBlog"
+    },
+    "local": {
+        "username": "u6fivhpvk4qfxbzm6wy9",
+        "password": "SXDtjRvoWjfNTRMWibcUmQHhKJNAFp",
+        "database": "bau712v0vuf0f3h9bofu",
+        "host": "bau712v0vuf0f3h9bofu-postgresql.services.clever-cloud.com",
+        "dialect": "postgres",
+        "logging": false,
+        "port":50013,
         "migrationStorageTableName": "sequelizeMetaBlog"
     }
 }
