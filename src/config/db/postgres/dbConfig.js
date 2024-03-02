@@ -13,16 +13,17 @@ module.exports = async () => {
       dialect,
       port,
     };
-  } else {
-    const dbSecrets = await retrieveSecrets();
-    dbConnectionConfig = {
-      database: dbSecrets.dbInstanceIdentifier,
-      username: dbSecrets.username,
-      password: dbSecrets.password,
-      host: dbSecrets.host,
-      dialect: dbSecrets.engine,
-      port: dbSecrets.port,
-    };
+  }
+   else {
+    // const dbSecrets = await retrieveSecrets();
+    // dbConnectionConfig = {
+    //   database: dbSecrets.dbInstanceIdentifier,
+    //   username: dbSecrets.username,
+    //   password: dbSecrets.password,
+    //   host: dbSecrets.host,
+    //   dialect: dbSecrets.engine,
+    //   port: dbSecrets.port,
+    // };
   }
 
   dbConfig = {

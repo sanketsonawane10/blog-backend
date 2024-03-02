@@ -14,6 +14,7 @@ const initSequelize = async () => {
       {
         host: dbSecrets.host,
         dialect: dbSecrets.dialect,
+        port: dbSecrets.port,
         pool: {
           max: dbSecrets.pool.max,
           min: dbSecrets.pool.minmin,
@@ -33,6 +34,7 @@ const initSequelize = async () => {
         console.log("database connected successfully");
       })
       .catch((err) => {
+        console.log(err);
         console.log("error while connecting database");
        });
   }

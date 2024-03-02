@@ -16,10 +16,4 @@ module.exports = {
     // Node Env
     nodePort: process.env.PORT,
 
-    // AWS secrets
-    accessKeyId: process.env.ACCESS_KEY_ID,
-    secretAccessKey: process.env.SECRET_ACCESS_KEY,
-    dbSecret: process.env.DB_SECRET,
-    awsRegion: process.env.AWS_REGION,
-
 };
